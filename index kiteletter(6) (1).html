@@ -1,0 +1,522 @@
+b<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="icon" href="https://i.imgur.com/j3H0uBN.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	/*****************************************/
+
+	html {
+	    scroll-behavior: smooth;
+	}
+
+	/****************************************/
+	body {
+		margin: 0;
+		font-family: calibri;
+	}
+	.navbar {
+	    background: #ffffff;
+	    width: 100%;
+	    border-bottom: 2px solid #15569c;
+	    overflow: hidden;
+	}
+	.navbar_logo {
+	    float: left;
+	}
+	.navbar ul {
+	    list-style: none;
+	    padding: 0;
+	    text-align: right;
+	    float: right;
+	    margin: 0;
+	    padding-right: 20px;
+	}
+	.navbar ul li{
+		display: inline-block;
+	}
+	.navbar ul li a {
+	    color: black;
+	    text-decoration: none;
+	    font-size: 19px;
+	    padding: 20px 15px;
+	    display: inline-block;
+	}
+	.navbar ul li a:hover {
+	    background: #f1f1f1;
+	}
+
+	img.logo {
+	    width: 210px;
+	    padding: 12px 0 0 0;
+	}
+
+
+	/******************** CONTAINER CSS ***************************/
+	.container {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	@media (min-width: 768px) {
+	    .container {
+	        width: 750px;
+	    }
+	}
+	@media (min-width: 992px) {
+	    .container {
+	        width: 970px;
+	    }
+	}
+	@media (min-width: 1200px) {
+	    .container {
+	        width: 1170px;
+	    }
+	}
+	.items_a {
+	    color: white;
+	    text-decoration: none;
+	}
+	.items_a h3 {
+	    text-align: center;
+	    margin: 0;
+	    padding-bottom: 20px;
+	    transition: 0.4s ease all;
+	}
+	.img1 {
+	    width: 120px;
+	    display: block;
+	    margin: auto;
+	}
+	.img2 {
+	        width: 95px;
+	        display: block;
+	        margin: auto;
+	}
+	/**********************************************************************************/
+
+	.bg-blue {
+	    background: rgb(112,149,190);
+	    background: radial-gradient(circle, rgba(112,149,190,1) 0%, rgba(21,86,156,1) 91%);
+	    padding: 50px 0;
+	}
+	.w_16 {
+	    width: 16.6667%;
+	    float: left;
+	    padding: 0 15px;
+	}
+	.row {
+	    overflow: hidden;
+	}
+	.img_bg_s {
+	    background: white;
+	    padding: 15px 10px;
+	    border: 1px solid white;
+	    border-radius: 10px;
+	}
+
+	.items_a {
+	    display: block;
+	    transition: 0.4s ease all;
+	}
+	.items_a:hover h3 {
+	    color: #00deff;
+	    transition: 0.4s ease all;
+	}
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	.marque_logo {
+	    width: 250px;
+	    display: block;
+	    margin: auto;
+	}
+	.w_33 {
+	    width: 33.33%;
+	    float: left;
+	    padding-right: 0 15px;
+	}
+	img.marque_logo1 {
+	    width: 83px;
+	    display: block;
+	    margin: auto;
+	}
+	.marquee {
+	    background: white;
+	    padding: 20px 10px;
+	    border-radius: 5px;
+	    margin: 0 15px;
+	}
+	img.w_woman {
+	    width: 90px;
+	    margin-left: 20px;
+	}
+	.download_app {
+	    width: 170px;
+	    height: 55px;
+	}
+	img.email {
+	    width: 60px;
+	    float: right;
+	    margin-right: 20px;
+	}
+
+
+
+
+
+
+
+
+	.tooltip {
+	  position: relative;
+	  display: block;
+	  border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	    visibility: hidden;
+	    width: 161px;
+	    background-color: rgba(21, 86, 156, 0.72);
+	    color: #fff;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 5px 0;
+	    position: absolute;
+	    z-index: 1;
+	    left: 0;
+	    margin-left: 0px;
+	    opacity: 0;
+	    transition: opacity 0.3s;
+	    top: 0px;
+	    font-size: 13px;
+	}
+
+	.tooltip .tooltiptext::after {
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -5px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color: #555 transparent transparent transparent;
+	}
+
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	  opacity: 1;
+	}
+
+
+	@media screen and (max-width: 768px) {
+	    .w_16 {
+	    width: 100%;
+	    float: unset;
+	    padding: 0 15px;
+	    margin-bottom: 20px;
+	}
+	.w_33 {
+	    width: 100%;
+	    float: unset;
+	    margin-bottom: 30px;
+	}
+	img.w_woman {
+	    width: 90px;
+	    margin-left: 20px;
+	    display: block;
+	    margin: auto;
+	}
+	.download_app {
+	    width: 170px;
+	    height: 55px;
+	    margin: auto;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	img.email {
+	    width: 60px;
+	    float: unset;
+	    margin-right: 20px;
+	    margin: auto;
+	    display: block;
+	}
+
+
+
+
+
+
+	}
+
+
+
+	@media screen and (max-width: 991px) and (min-width: 768px) {
+	    .w_16 {
+	    width: 33.33%;
+	    float: left;
+	    padding: 0 15px;
+	}
+	.visible-sm {
+	    display: block !important;
+	}
+	.download_app {
+	    width: 110px;
+	    height: 38px;
+	    margin-top: 12px;
+	}
+
+	}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar_logo">
+					<img src="https://i.ibb.co/1s6CyHf/Logo.png" alt="" class="logo">
+				</div>
+				<ul>
+					<li><a href="#" class="active">Plugins</a></li>
+					<li><a href="#">Themes</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Newsletter</a></li>
+					<li><a href="#">Premium</a></li>
+					<li><a href="#"><i class="fas fa-search"></i></a></li>
+					
+					
+				</ul>
+			</div>
+			
+		</nav>
+	</header>
+	<section class="bg-blue">
+		<div class="container">
+			
+			<div class="row">
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">Archive your Documents with Cryptography ledgers with Block Chain Technology.</span>
+						<a href="#" class="items_a">
+							<h3>Document Archiving</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/d7DRsbX/img1.png" alt="Document Archiving" class="img2">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">Upload  photos and create a custom Collage and "SHIP" it to any person/address.</span>
+						<a href="#" class="items_a">
+							
+							<h3>Photo Collage</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/pddMk4z/img2.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">Draw, Paint or create Art and "SHIP" it to any person/address.</span>
+						<a href="#" class="items_a">
+							<h3>Draw &amp; Paint</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/zPLTSMC/img3.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="clearfix visible-sm" style="display: none;"></div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">Write/Create a "Document" and "SHIP" it to any person/address.</span>
+						<a href="#" class="items_a">
+							<h3>Text Editor</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/L9ZkqQg/img4.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">Use your device camera to crop photos of paper into PDF format with options to "SHIP".</span>
+						<a href="#" class="items_a">
+							<h3>Camera Scanner</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/fG8BRPB/img5.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">$0.10 cents a "page" + printing. Perfect for printing PDF format book.</span>
+						<a href="#" class="items_a">
+							<h3>Upload &amp; Ship</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/JmCJgJd/img6.png" alt="Document Archiving" class="img1">
+							</div>
+							
+						</a>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<br><br>
+
+				<div behavior="" direction="" class="marquee">
+					<div class="marquee_Div">
+						<div class="row">
+							<div class="w_33">
+								<div>
+									<img src="https://i.ibb.co/1s6CyHf/logo.png" alt="" class="marque_logo">
+								</div>
+							</div>
+							<div class="w_33">
+								<div>
+									<img src="https://i.ibb.co/6RKJPLJ/van.png" alt="" class="marque_logo1">
+								</div>
+							</div>
+
+							<div class="w_33">
+								<div>
+									<img src="https://i.ibb.co/1s6CyHf/logo.png" alt="" class="marque_logo">
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+
+				<br><br>
+
+				<div class="w_16">
+					<div  class="tooltip">
+						<span class="tooltiptext">Purchase a Money Order or Check and "SHIP" it to any person/address.</span>
+						<a href="#" class="items_a">
+							<h3>Money Order/Check</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/2h3PRGh/img7.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">Upload Payrol data and Automatically have them printed and "SHIPPED" in secure pressure seal forms. </span>
+						<a href="#" class="items_a">
+							<h3>Pay Roll</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/tzwspTs/img8.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">Mine Cryptocurrency or Exchange your wallet for a check or Money Order and "SHIP" it to anyone.</span>
+						<a href="https://google.com" target="_blank" class="items_a">
+							<h3>Crypto CurrencyX</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/FsyrBsV/img9.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">Create a Greeting Card with many templates to choose from and "SHIP" it to any person/address. </span>
+						<a href="#" class="items_a">
+							<h3>Greeting Card</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/vJSSXHY/img10.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">$0.10 cents a "PAGE" Print your Social Media + Shipping.</span>
+						<a href="#" class="items_a">
+							<h3>Print Social Media</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/5cG264K/img11.png" alt="Document Archiving" class="img1">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="w_16">
+					<div class="tooltip">
+						<span class="tooltiptext">"ENTERPRISE" allows you to upload your own custom company logos onto mail pieces and checks for Company Branding. </span>
+						<a href="#" class="items_a">
+							<h3>Enterprise</h3>
+							<div class="img_bg_s">
+								<img src="https://i.ibb.co/r2tcCvc/img12.png" alt="Document Archiving" class="img1">
+							</div>
+							
+						</a>
+					</div>
+				</div>
+				
+
+			</div>
+
+		</div>
+
+		<br>
+
+		
+		<footer>
+			<div class="container">
+				<hr style="border-top: 3px solid white;">
+				<br>
+				<div class="row">
+					<div class="w_33">
+						<div>
+							<a href=""><img src="images/w_woman.png" alt="" class="w_woman"></a>
+						</div>
+					</div>
+					<div class="w_33">
+						<div>
+							<a href="https://google.com "><img src="https://i.ibb.co/BVbcCwd/AppStore.png" alt="" class="download_app"></a>
+							<a href=""><img src="https://i.ibb.co/yfTdD4v/global-playstore.png" alt="" class="download_app"></a>
+						</div>
+					</div>
+					<div class="w_33">
+						<div>
+							<a href=""><img src="https://i.ibb.co/wKVcgPd/email.png" alt="" class="email"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+	</section>
+
+
+	
+</body>
+</html>
